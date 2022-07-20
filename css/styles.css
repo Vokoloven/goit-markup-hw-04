@@ -434,7 +434,8 @@ body {
   margin-right: 30px;
 }
 
-.customers .customers-box {
+.customers-link {
+  display: flex;
   justify-content: center;
   align-items: center;
   display: flex;
@@ -448,8 +449,22 @@ body {
   fill: var(--social-network);
 }
 
-.customers .customers-box:hover,
-.customers .customers-box:hover {
+/* .customers .customers-box {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  width: 170px;
+  height: 92px;
+  margin-right: auto;
+  margin-left: auto;
+
+  border: 1px solid var(--social-network);
+  border-radius: 4px;
+  fill: var(--social-network);
+} */
+
+.customers .customers-link:hover,
+.customers .customers-link:focus {
   fill: var(--button-color);
   border-color: var(--button-color);
 }
@@ -564,7 +579,8 @@ body {
   fill: var(--white-color);
 }
 
-.footer .follow-link:hover {
+.footer .follow-link:hover,
+.footer .follow-link:focus {
   background-color: var(--button-color);
 }
 
@@ -598,6 +614,12 @@ body {
   margin-bottom: 0;
 }
 
+.filter .filter-search:hover,
+.filter .filter-search:focus {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+    1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
 .filter-list > .items:not(:last-child) {
   margin-right: 8px;
 }
@@ -628,6 +650,8 @@ body {
 .filter-button:focus {
   color: var(--white-color);
   background-color: var(--button-color);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter .filter-search {
