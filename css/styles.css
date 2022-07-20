@@ -10,6 +10,7 @@
   --rgba-color: rgba(255, 255, 255, 0.6);
   --border-header: #ececec;
   --social-network: #afb1b8;
+  --social-network-rgba: rgba(255, 255, 255, 0.1);
 }
 /* Глобальные стили в Body */
 body {
@@ -367,7 +368,6 @@ body {
 }
 /* Иконки для соц сетей */
 .team .social-box {
-  /* display: flex; */
   margin-top: 16px;
 }
 
@@ -469,6 +469,10 @@ body {
   padding-bottom: 60px;
 }
 
+.footer .footer-box {
+  display: flex;
+}
+
 .footer .footer-logo {
   display: inline-block;
   margin-bottom: 20px;
@@ -512,6 +516,61 @@ body {
 
 .footer .goto:not(:last-child) {
   margin-bottom: 9px;
+}
+
+.footer .address-box {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Follower  */
+
+.footer .address-box:not(:last-child) {
+  margin-right: 70px;
+}
+
+.footer .follow-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: var(--white-color);
+}
+
+.footer .follow-list {
+  display: flex;
+}
+
+.footer .follow-item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.footer .follow-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+
+  background-color: var(--social-network-rgba);
+  fill: var(--white-color);
+}
+
+.footer .follow-link:hover {
+  background-color: var(--button-color);
+}
+
+.footer .follow-icon {
+  width: 20px;
+  height: 20px;
 }
 
 /* Стили для портфолио */
