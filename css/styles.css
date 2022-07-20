@@ -21,6 +21,13 @@ body {
   list-style: none;
   font-style: normal;
 }
+/* Кастомизация иконок svg */
+.icon {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
 /* Скрываем заголовок которого нет на макете */
 .hiden-title {
   display: none;
@@ -107,8 +114,20 @@ body {
   margin-bottom: 0;
 }
 
+.envelope-icon {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+}
+
+.phone-icon {
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+}
+
 .main .address:not(:last-child) {
-  margin-right: 50px;
+  margin-right: 30px;
 }
 
 .header-list .link:hover,
@@ -116,6 +135,7 @@ body {
 .goto-list .link:hover,
 .goto-list .link:focus {
   color: var(--button-color);
+  fill: var(--button-color);
 }
 
 .header .studio,
@@ -123,7 +143,10 @@ body {
   color: var(--button-color);
 }
 .goto-list .contacts {
+  display: flex;
   color: var(--paragraph-color);
+  fill: var(--paragraph-color);
+  align-items: center;
 }
 .hero {
   padding-top: 200px;
@@ -353,12 +376,8 @@ body {
   color: var(--button-color);
 }
 
-/* .footer .list {
-  margin-left: 215px;
-} */
-
 .footer .footer-link,
-.footer .footer-adress {
+.footer .footer-address {
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
@@ -370,9 +389,9 @@ body {
 }
 
 .footer .footer-link:hover,
-.footer .footer-adress:hover,
+.footer .footer-address:hover,
 .footer .footer-link:focus,
-.footer .footer-adress:focus {
+.footer .footer-address:focus {
   color: var(--button-color);
 }
 
