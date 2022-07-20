@@ -434,10 +434,7 @@ body {
   margin-right: 30px;
 }
 
-.customers .customers-link {
-}
-
-.customers .container {
+.customers .customers-box {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -451,8 +448,8 @@ body {
   fill: var(--social-network);
 }
 
-.customers .container:hover,
-.customers .container:hover {
+.customers .customers-box:hover,
+.customers .customers-box:hover {
   fill: var(--button-color);
   border-color: var(--button-color);
 }
