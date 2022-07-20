@@ -9,6 +9,7 @@
   --third-bcgrnd-color: #f5f4fa;
   --rgba-color: rgba(255, 255, 255, 0.6);
   --border-header: #ececec;
+  --social-network: #afb1b8;
 }
 /* Глобальные стили в Body */
 body {
@@ -369,6 +370,44 @@ body {
 .team-list .img {
   display: block;
   margin: 0;
+}
+/* Иконки для соц сетей */
+.team .social-box {
+  /* display: flex; */
+  margin-top: 16px;
+}
+
+.team .social-list {
+  display: flex;
+  padding: 0;
+  justify-content: center;
+}
+
+.team .social-items:not(:last-child) {
+  margin-right: 10px;
+}
+
+.team .social-link {
+  display: flex;
+
+  width: 44px;
+  height: 44px;
+  justify-content: center;
+  align-items: center;
+
+  border-radius: 50%;
+  fill: var(--social-network);
+}
+
+.team .social-link:hover,
+.team .social-link:focus {
+  background-color: var(--button-color);
+  fill: var(--white-color);
+}
+
+.team .social-icons {
+  width: 20px;
+  height: 20px;
 }
 
 .footer {
