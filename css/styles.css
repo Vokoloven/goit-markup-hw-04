@@ -653,13 +653,19 @@ body {
   padding: 20px 24px 20px;
 }
 
-.result-search > .filter-search:not(:nth-child(3n)) {
+.filter .result-search {
+  gap: 30px;
+}
+
+/* Additional distance between row and column */
+
+/* .result-search > .filter-search:not(:nth-child(3n)) {
   margin-right: 30px;
 }
 
 .result-search > .filter-search:not(:nth-last-child(-n + 3)) {
   margin-bottom: 30px;
-}
+} */
 
 .filter .img {
   display: block;
